@@ -21,4 +21,4 @@ myMarker est un pin créé mis aux coordonnées d'Appstud lorsque l'application 
 - Afin de localiser l'utilisateur, plusieurs techniques : la première avec la classe LocationManager qui fait appel à des GPS (donc il y a eu ajout de permission dans Manifest); la deuxième avec Location, qui changeait la caméra de position lorsque celle-ci n'est plus au même endroit que la location précédente.
 
 # List / ce que j'aurai voulu faire
-Création d'une classe RequeteHTTP dans le même package que les autres afin de récupérer l'adresse serveur.
+Création d'une classe RequeteHTTP dans le même package que les autres afin de récupérer l'adresse serveur. J'aurai ensuite lié cette classe aux activités puis gérer l'affichage pour que sur ListActivity l'affichage d'un endroit prenne un certain pourcentage de l'écran et toute la largeur du téléphone.
