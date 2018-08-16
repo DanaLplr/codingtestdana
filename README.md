@@ -12,4 +12,13 @@ Comme il est préciser dans le sujet, l'application possède une partie Map et u
 # Ajout de la map
 Pour ajouter la map, je me suis aidée de GoogleMaps Plateform https://developers.google.com/maps/documentation/android-sdk/map-with-marker qui proposait un exemple de Maps sur un GitHub https://github.com/googlemaps/android-samples. 
 
+# Gestion du visuel de la caméra
+- Plusieurs tests ont été effectué afin de positionné autrement la caméra, à l'aide de la documentation https://developers.google.com/maps/documentation/android-sdk/views, les classes LatLng et CameraPosition ont été utilisé. En rentrant les coordonnées avec CameraUpdateFactory ou encore avec une autre méthode en passant par gMap.moveCamera(...) la caméra devrait se repositionné sur l'endroit voulu. 
+
 # Localisation de l'utilisateur
+myMarker est un pin créé mis aux coordonnées d'Appstud lorsque l'application ne trouve pas la localisation du téléphone.
+
+- Afin de localiser l'utilisateur, plusieurs techniques : la première avec la classe LocationManager qui fait appel à des GPS (donc il y a eu ajout de permission dans Manifest); la deuxième avec Location, qui changeait la caméra de position lorsque celle-ci n'est plus au même endroit que la location précédente.
+
+# List / ce que j'aurai voulu faire
+Création d'une classe RequeteHTTP dans le même package que les autres afin de récupérer l'adresse serveur.
